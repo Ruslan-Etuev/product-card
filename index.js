@@ -2,8 +2,9 @@ const firstCard = document.querySelector (".product-cards");
 const colorButton = document.querySelector (".btn-color");
 colorButton.addEventListener ("click", function() {
   firstCard.style.backgroundColor = "#a3d2ca";
+  console.log("Кнопка нажата!");
 })
-console.log("Кнопка нажата!");
+
 const allCards = document.querySelectorAll (".product-cards");
 const colorButtonAll = document.querySelector (".btn-color-all");
 colorButtonAll.addEventListener ("click", function() {
@@ -32,7 +33,7 @@ messageButton.addEventListener('click', function() {
 });
 
 const pageTitle = document.querySelector (".title");
-pageTitle.addEventListener ("mouseover", function() {
+pageTitle.addEventListener ("mouseover", function(event) {
   console.log(event.target.textContent);
 });
 const toggleButton = document.querySelector('.btn-toggle');
