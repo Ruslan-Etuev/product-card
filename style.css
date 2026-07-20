@@ -18,10 +18,9 @@ body {
 }
 .product-cards {
   width: 340px;
-  padding: 20px;
+  padding: 30px;
   background-color: #F7F7FA;
   margin: 0;
-  border: 10px solid #F7F7FA;
   box-sizing: border-box;
   
 }
@@ -66,4 +65,9 @@ body {
 .product-cards__cost {
   display: flex;
   justify-content: space-between; 
+}
+  
+.active-color {
+ background-color: #4b8bf5 !important;
+ color: white;
 }
